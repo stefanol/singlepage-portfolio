@@ -1,0 +1,110 @@
+doctype html
+html
+
+  head
+
+  meta(charset="utf-8")
+
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+
+  title Stefano Lombardo's Portfolio
+
+  meta(name="description", content="Hello World")
+
+  meta(name="viewport", content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui")
+
+  link(rel="stylesheet", href="assets/styles/main.css", type="text/css")
+
+  body
+
+  div.wrapper
+
+    header.header
+
+      img.logoImage
+
+      ul.nav
+
+        li: a(href="/") Home
+
+        li: a(href="/about") About
+
+        li: a(href="/contact") Contact
+
+    div.main
+
+    footer.footer
+
+      p Copyright &copy; 2014
+
+  // -----------------------------
+  // Templates
+  // -----------------------------
+
+  script#home(type="text/template").
+    <div class="page home">
+
+      <h1>Hello, and welcome to my portfolio page!</h1>
+      <h1>The name's Stefano Lombardo</h1>
+
+      <h2>I am a designer with an eye for detail</h2>
+
+      <section class="portfolio">
+
+        <h1>Here is some stuff I have worked on</h1>
+
+        <img src="http://placehold.it/300x150">
+        <img src="http://placehold.it/300x150">
+        <img src="http://placehold.it/300x150">
+        <img src="http://placehold.it/300x150">
+
+      </section>
+
+
+    </div><!--end #home-->
+
+  script#about(type="text/template").
+    <div class="page about">
+
+      <h1>I Don't Like Talking About Myself, But...</h1>
+
+      <p>I am currently in my 3rd year of Web Design & Interactive Media at Humber College in Toronto. I feel that you need to 
+      be inspired by something in order to bring the best out of your work. For me, the world is my inspiration. I enjoy travelling, 
+      and seeing the world from a different angle.</p>
+
+      <h1>What Do I Do?</h1>
+
+      <p>What Do I Do?I enjoy working on designing logos and graphics. I feel I am best at designing as it allows me to be creative, 
+      and think critically through the design process. I am also farmiliar with HTML and CSS/LESS.</p>
+
+    </div><!--end about-->
+
+  script#contact(type="text/template").
+    <div class="page contact">
+
+      <h1>Contact me!<h1>
+      <h2>I mean...only if you want to.</h2>
+
+      <h2>Email: stefanol@rogers.com</h2>
+      <h2>Twitter: <a href="http://www.twitter.com/DaMustache" target="_blank">@DaMustache</a></h2>
+
+    </div><!--end contact-->
+
+  // -----------------------------
+  // Libraries
+  // -----------------------------
+
+  script(type="text/javascript", src="http://code.jquery.com/jquery-2.1.1.min.js")
+
+  script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js")
+
+  script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js")
+
+  script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js")
+
+
+  // -----------------------------
+  // Application
+  // -----------------------------
+
+  script(type="text/javascript", src="assets/scripts/main.js")
