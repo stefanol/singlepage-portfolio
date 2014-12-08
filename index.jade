@@ -31,6 +31,8 @@ html
 
         li: a(href="/portfolio") Portfolio
 
+        li: a(href="/social") Social
+
         li: a(href="/contact") Contact
 
     div.main
@@ -51,22 +53,13 @@ html
 
       <h2>I am a designer with an eye for detail</h2>
 
-      <section class="portfolio">
-
-        <h1>Here is some stuff I have worked on</h1>
-
-        <a href="http://www.stefanol.com/?page_id=10"><img src="assets/images/stefLogo.png"></a>
-        <img src="http://placehold.it/300x150">
-        <img src="http://placehold.it/300x150">
-        <img src="http://placehold.it/300x150">
-
-      </section>
-
 
     </div><!--end #home-->
 
   script#about(type="text/template").
     <div class="page about">
+
+      <img src="assets/images/stefPic.jpg">
 
       <h1>I Don't Like Talking About Myself, But...</h1>
 
@@ -74,24 +67,34 @@ html
       be inspired by something in order to bring the best out of your work. For me, the world is my inspiration. I enjoy travelling, 
       and seeing the world from a different angle.</p>
 
-      <h1>What Do I Do?</h1>
+      <h1 id="secondHeader">What Do I Do?</h1>
 
-      <p>What Do I Do?I enjoy working on designing logos and graphics. I feel I am best at designing as it allows me to be creative, 
+      <p id="secondParagraph">What Do I Do?I enjoy working on designing logos and graphics. I feel I am best at designing as it allows me to be creative, 
       and think critically through the design process. I am also farmiliar with HTML and CSS/LESS.</p>
 
     </div><!--end about-->
 
-  script#contact(type="text/template").
+  script#portfolio(type="text/template").
     <div class="page portfolio">
 
       <h1>Here is some stuff I have worked on</h1>
 
-        <img src="http://placehold.it/300x150">
-        <img src="http://placehold.it/300x150">
-        <img src="http://placehold.it/300x150">
-        <img src="http://placehold.it/300x150">
+      <a href="http://www.stefanol.com/?page_id=10" target="_blank"><img src="assets/images/logo.jpg"></a>
+      <a href="http://www.stefanol.com/?page_id=14" target="_blank"><img src="assets/images/albumAlert.png"></a>
+      <a href="http://www.stefanol.com/?page_id=16" target="_blank"><img src="assets/images/stefLogo.png"></a>
+      <a href="http://www.stefanol.com/?page_id=18" target="_blank"><img src="assets/images/LeahBookbg.jpg"></a>
 
     </div>
+
+  script#social(type="text/template").
+    <div class="page social">
+
+      <h1>Find Me Online<h1>
+
+      <a class="twitter-timeline" href="https://twitter.com/DaMustache" data-widget-id="451194858523226112">Tweets by @DaMustache</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    </div><!--end contact-->
 
   script#contact(type="text/template").
     <div class="page contact">
