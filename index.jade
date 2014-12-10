@@ -15,13 +15,18 @@ html
 
   link(rel="stylesheet", href="assets/styles/main.css", type="text/css")
 
+  //- Fonts from Google Web Fonts
+  link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Oswald', type='text/css')
+
+  link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300', type='text/css')
+
   body
 
   div.wrapper
 
     header.header
 
-      img.logoImage
+      //- img.logoImage
 
       ul.nav
 
@@ -41,9 +46,9 @@ html
 
       p Copyright &copy; 2014
 
-  // -----------------------------
-  // Templates
-  // -----------------------------
+  //- -----------------------------
+  //- Templates
+  //- -----------------------------
 
   <!--Portfolio Section -->
   script#home(type="text/template").
@@ -73,7 +78,7 @@ html
 
       <h1 id="secondHeader">What Do I Do?</h1>
 
-      <p id="secondParagraph">What Do I Do? I enjoy working on designing logos and graphics. I feel I am best at designing as it allows me to be creative, 
+      <p id="secondParagraph">I enjoy working on designing logos and graphics. I feel I am best at designing as it allows me to be creative, 
       and think critically through the design process. I am also farmiliar with HTML and CSS/LESS.</p>
 
     </div><!--end about-->
@@ -95,7 +100,7 @@ html
   script#social(type="text/template").
     <div class="page social">
 
-      <h1>Find Me Online<h1>
+      <h1>Check Out My Tweets!<h1>
 
       <a class="twitter-timeline" href="https://twitter.com/DaMustache" data-widget-id="451194858523226112">Tweets by @DaMustache</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -114,9 +119,9 @@ html
 
     </div><!--end contact-->
 
-  // -----------------------------
-  // Libraries
-  // -----------------------------
+  //- -----------------------------
+  //- Libraries
+  //- -----------------------------
 
   script(type="text/javascript", src="http://code.jquery.com/jquery-2.1.1.min.js")
 
@@ -127,8 +132,8 @@ html
   script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js")
 
 
-  // -----------------------------
-  // Application
-  // -----------------------------
+  //- -----------------------------
+  //- Application
+  //- -----------------------------
 
   script(type="text/javascript", src="assets/scripts/main.js")
